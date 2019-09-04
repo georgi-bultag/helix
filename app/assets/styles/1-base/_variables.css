@@ -1,0 +1,83 @@
+/* -------------------------- *\
+    BULTAG Variables:
+\* -------------------------- */
+ 
+:root {
+	/* Colors */
+	--main-color: #434343;
+	--secondary-color: #333031;
+	--third-color: #AFB7C8;
+	/*--accent-color: #f52630;*/
+	--accent-color: #0065A9;
+
+	--gtcolor: #046CFF;
+
+	--accent-color-2: #f55a4e;
+	--accent-color-3: #25BBFE;
+	--accent-color-4: #2C72FE;
+	--accent-color-5: #09bb82;
+	--dark: #00206d;	
+	--dark-2: #0a36a2;
+	--dark-3: #8044dd;
+	--dark-4: #0c3aab;
+
+	/* News */
+		--news-bg-1: #fff;
+		--news-bg-2: #55565e;
+		--news-cl-1: rgba(0,0,0, .7);
+		--news-cl-2: #fff;
+		--dark: rgba(0,0,0, .8);
+
+	/* Text */
+	/*--font-family: Lato, serif; font-weight: 400;*/
+	--font-family: Lato,Georgia,Times,Times New Roman,serif; font-weight: 400; 
+
+	--default-font-size: 1.6rem;
+	--line-height: 1.3;
+	--text-color: #052154;
+	--text-color: #434343;
+	--text-color-2: #045381;
+	--link-color: rgba(0,0,0, .5);
+	--link-hover-color: var(--accent-color);
+
+	/* Box Model */
+	--border-radius: .7rem;
+
+	/* Other */
+	--intro-image-background: rgba(0,0,0, .5);
+	--skew: 0deg;
+	--polygon: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	--polygon-2:  polygon(0 15vh,  100% 0, 100% 75vh, 0 100%);
+}
+
+$mainColor: var(--main-color);
+$secondaryColor: var(--secondary-color);
+$thirdColor: var(--third-color);
+$accentColor: var(--accent-color);
+$accentColor2: var(--accent-color);
+
+$--dark: var(--dark);
+$dark: var(--dark-2);
+
+$color-white: #fff;
+$color-black: #000;
+
+$textColor: rgba(#222, .7);
+$linkColor: rgba(#e00000, .7);
+$linkHoverColor: #e00000; 
+
+$mainBlue: #2f5572;
+$mainOrange: #d59541;
+
+$borderRadius: .3rem;
+
+$topNavColor: #404040;
+
+$default-font-size: 1rem;
+
+$skew: var(--skew);
+$polygon: var(--polygon);
+$polygon-2: var(--polygon-2);
+
+
+$border-radius: 0;
