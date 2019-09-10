@@ -1,7 +1,8 @@
-$( document ).ready(function() {
+jQuery(document).ready(function ($) {
+	// $( ".menu-item-has-children" ).append( '<span class="triger">></span>' );
 
-    $(".span").click(function(){
-    	$(this).toggleClass("&:before, &:after");
-  });
-});
+	$(".triger").click(function () {
+		$(this).parent().toggleClass( "menu-item-has-children--expanded" );
+	})
+})
 

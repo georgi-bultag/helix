@@ -1,129 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script
+    src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"
+    data-search-pseudo-elements></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <title>Clear View Escapes</title>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>  
+  <title>AB PRECISION</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, Afordable travel">
+
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild -->
   <!-- build:js assets/scripts/Vendor.js -->
-  <script src="/temp/scripts/Vendor.js"></script> 
+  <script src="/temp/scripts/Vendor.js"></script>
+  <script src="/assets/scripts/scripts.js"></script> 
   <!-- endbuild -->
 </head>
 <header class="header">
-  ERROR 404 - MENU IS MISSING !! CANT PROCEED THE SITE !!
-</header>
-<body>
-<section class="mainSection mainSection__intro">
-  <div class="mainSection mainSection__dark">
+  <div class="logo">
     <!-- <a href="/"> -->
-      <a href="/">
-          <button type="button" class="btn">About CITA</button>
-        </a>
+      <img srcset="assets/images/logo.png">
     <!-- </a> -->
+  </div>
 
-    CITA provides three FREE services to help charities be more effective through their use of technology
-  </div><!-- /.mainSection mainSection--dark -->
-</section><!-- /.mainFooter -->
-<!-- <div class="div">@@@</div> -->
-<section class="forCharities">
-  <div class="shell">
-    
-    <h2 class="title">for charities</h2>
+  <input type="checkbox" class="nav-trigger" id="nav-trigger">
+    <label for="nav-trigger" class="nav-trigger__menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label><!-- /.nav-trigger__menu -->
+  <nav class="nav">
+    <ul class="parent">
+      <li class="current-menu-item">
+        <a href="#">Начало</a>
+      </li>
+      <li>
+        <a href="#">За нас</a>
+      </li>
+      <li>
+        <a href="#">Проекти</a>
+      </li>
 
-    <div class="holder">
-      <div class="charityItem">
-        <picture>
-          <img src="assets/images/surgery.jpg">
-        </picture>
+      <li class="menu-item-has-children">
+        <a href="#">Услуги</a>
 
-        <h3 class="title">Tech surgery</h3>
-        <h3 class="title title__red">Independent advice on effective it.</h3>
-
-        <p>The Tech Surgery provides charities with FREE independent advice to help them make better use of technology.</p>
-
-        <div class="div">
-          <a href="/">
-            <button type="button" class="btn">About CITA</button>
-          </a>
-        </div>
-      </div><!-- /.charityItem -->
-
-      <div class="charityItem">
-        <picture>
-          <img src="assets/images/it.jpg">
-        </picture>
-
-        <h3 class="title">It consultancy</h3>
-        <h3 class="title title__red">Helpingyou through your IT project.</h3>
-
-        <p>Our IT Consultancy is FREE service that can help you make better use of technology.<!-- <br><br> --></p>
-        <div class="div">
-          <a href="/">
-            <button type="button" class="btn">About CITA</button>
-          </a>
-        </div>
-      </div><!-- /.charityItem -->
-
-      <div class="charityItem">
-        <picture>
-          <img src="assets/images/project.jpg">
-        </picture>
-
-        <h3 class="title">It project delivery</h3>
-        <h3 class="title title__red">The right skills for your IT project.</h3>
-
-        <p>Our FREE IT Project Delivery service helps charities find the right skills for any IT or technology project.</p>
+        <span class="triger">></span>
         
-        <div class="div">
-          <a href="/">
-            <button type="button" class="btn">About CITA</button>
-          </a>
-        </div>
-      </div><!-- /.charityItem -->
-    </div><!-- /.holder -->
-  </div><!-- /.shell -->
-</section><!-- /.forCharities -->
+        <ul class="sub-menu">
+          <li>
+            <a href="#">Услуга 1</a>
+          </li>
+          <li>
+            <a href="#">Услуга 2</a>
+          </li>
+          <li>
+            <a href="#">Услуга 3</a>
+          </li>
+          <li>
+            <a href="#">Услуга 4</a>
+          </li>
+          <li>
+            <a href="#">Услуга 5</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Контакти</a>
+      </li>
+    </ul>
+  </nav>
 
-<section class="testimonials">
-  <div class="shell"> 
-    <div class="headerTitle">
-      <h2 class="title">testimonials</h2>
-    </div><!-- /.headerTitle -->
+  <div class="header__links">
+    <a href="/">
+      <button type="button" class="btn btn--orange">
+        <span><i class="fas fa-envelope"></i></span>
+        Направи запитване
+      </button>
+    </a>
 
-    <div class="holder">  
-      <div class="testimonialItem">
-        <picture>
-          <img src="assets/images/peter.png">
-        </picture>
-        <p>“It was incredibly useful to sit down with an expert who really listened to what we needed and was able to run through the different options available and how we can move forward to improve our data systems.”</p>
-        Peter Osbourne, Charity Manager
-      </div><!-- /.testimonialItem -->
+    <a href="/">
+      <button type="button" class="btn btn--blue">
+        <span><i class="fas fa-phone-alt"></i></span>
+        +359 896 777 771
+      </button>
+    </a>
+  </div>
+</header>
 
-      <div class="testimonialItem">
-        <picture>
-          <img src="assets/images/jane.png">
-        </picture>
-        <p>“The advice helped our charity focus on the most appropriate solutions for our IT and ensure our work is effective.”</p>
-        Jane Smith, Charity Operations  
-      </div><!-- /.testimonialItem -->
 
-      <div class="testimonialItem">
-        <picture>
-          <img src="assets/images/john.png">
-        </picture>
-        <p>“Having the advice of an expert who was able to take the time to understand our system and make recommendations has been incredibly useful. We have been able to act on the advice to make our system more reliable and resilient for the future.”</p>
-        John James, Charity Manager
-      </div><!-- /.testimonialItem -->
-    </div><!-- /.holder -->
-   <!--  <div class="div">
-  <a href="/">
-    <button type="button" class="btn">About CITA</button>
-  </a></div> -->
-  </div><!-- /.shell -->
-</section>
+
+ 
+
+ 
+</body>
+</html>
+<body>
+<!--   <br><br><br><br><br>
+<div class="lala">
+  <ul>
+    <li>asd</li>
+    <li>qwe</li>
+    <li>zxc</li>
+  </ul>
+</div> -->
 </body>
 </html>

@@ -1,0 +1,40 @@
+.btn {
+	width: 100%;
+	height: 4.5rem;
+	border: none;
+	color: #FFF;
+	font-weight: 700;
+	@mixin tra;
+
+	@mixin min 768 {
+		width: 20.1rem;
+	}
+
+	&--orange {
+		background: #fe7011;
+
+		&:hover {
+			background: rgba(254,112,17, .65);
+			color: #07396a;
+		}
+	}
+
+	&--blue {
+		background: #07396a;
+
+		&:hover {
+			background: rgba(7,57,106, .65);
+			color: #fe7011;
+		}
+	}
+}
+
+
+
+/*.headerButtons {
+	display: flex;
+	width: 50%;
+	height: auto;
+	order: 2;
+	margin-bottom: 0;
+}*/
