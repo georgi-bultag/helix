@@ -1,0 +1,9 @@
+.title {
+	text-align: center;
+	color: #7b7b7b;
+
+	@mixin min 768 {
+		font-size: 3.2rem;
+		text-align: left;
+	}
+}

@@ -5,4 +5,12 @@
 @import "5-animations/0-animations";
 @import "precision/_header";
 @import "precision/_nav";
-@import "precision/_btn";
+@import "precision/_links";
+@import "precision/_mainHeader";
+@import "precision/_gallery";
+@import "precision/_title";
+@import "precision/_secondHeader";
+@import "precision/_flickity";
+@import "precision/_activities";
+@import "precision/_2nd";
+@import "precision/_3rd";

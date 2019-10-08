@@ -73,10 +73,10 @@ img { max-width: 100%; height: auto; vertical-align: middle; }
 \* -------------------------- */
 
 .shell { 
-    max-width: 1081px; 
+    max-width: 1124px; 
     margin: 0 auto;
 
-    @media(max-width: 1000px){
+    @media(max-width: 1124px){
         padding: 0 20px;
     }   
 

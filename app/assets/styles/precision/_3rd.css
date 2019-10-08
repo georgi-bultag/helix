@@ -1,0 +1,195 @@
+.service {
+	padding-bottom: 0;
+
+	.holder {
+		.left {
+			@mixin min 768 {
+				width: 48%;
+			}
+		}
+
+		.right {
+			background: #fff;
+			
+			@mixin min 768 {
+				width: 50%;
+				padding-top: 0;
+			}
+		}
+	}
+
+	.title {
+		color: #fe7011;
+	}
+
+	ul {
+		position: relative;
+		left: 2rem;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	&:nth-child(3) {
+		padding-top: 0;
+	}
+}
+
+.page3 {
+	.activity {
+		background: #fff;
+		padding-top: 0;
+		height: 100%;
+		padding-top: 3rem;
+		@mixin tra;
+
+/*		@mixin min 375 {
+			height: 34rem;
+		}
+
+		@mixin min 425 {
+			height: 38rem;
+		}*/
+
+		@mixin min 768 {
+			width: 33%;
+			/*height: 40rem;*/
+		}
+
+		&:hover {
+			bottom: 1rem;
+			transform: translateY(-1.5rem);
+			box-shadow: .1rem .1rem 1rem .1rem #808080;
+
+			img {
+				opacity: .85;
+			}
+		}
+
+		.left {
+			width: 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.right {
+			padding-top: 2rem;
+			color: #000;
+			
+			.title {
+				color: #07396a;
+			}
+
+			p {
+				color: #000;
+			}
+		}
+	}
+}
+
+.ul {
+	position: relative;
+	padding-top: 0;
+	justify-content: space-between;
+	font-size: 1.5rem;
+
+	&__header {
+		display: flex;
+
+		.title {
+			font-size: 3rem;
+		}
+	}
+
+	&__main {
+		.left {
+			@mixin min 768 {
+				width: 49%;
+			}
+		}
+
+		ul {
+			list-style-type: none;
+			font-size: 1.8rem;
+			line-height: 3rem;
+
+			@mixin min 375 {
+				font-size: 1.7rem;
+				line-height: 3.5rem;
+			}
+
+			@mixin min 768 {
+				font-size: 2rem;
+			}
+
+			@mixin min 975 {
+				line-height: 5.5rem;
+			}
+		}
+
+		.fa-check-circle {
+			margin-right: 2rem;
+			font-size: 2.5rem;
+			color: #fe7011;
+		}
+	}
+
+	.title {
+		color: #000;
+		margin-bottom: 0;
+	}
+
+	a {
+		color: #000;
+		@mixin tra;
+
+		&:hover {
+			color: #fe7011;
+			font-weight: 700;
+
+			@mixin min 1040 {
+				letter-spacing: .1rem;
+			}
+		}
+	}
+}
+
+.similar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1.5rem 1.5rem 1.5rem 1rem;
+	margin-top: 2rem;
+	border: .2rem solid black;
+	border-radius: .5rem;
+	font-size: 1.6rem;
+
+	@mixin min 768 {
+		padding: 1.5rem 1.5rem 1.5rem 3rem;
+		margin-top: 7rem;
+		font-size: 1.8rem;
+	}
+
+	.fa-check-circle {
+		margin-right: 2rem;
+		font-size: 2.5rem;
+		color: #fe7011;
+	}
+
+	p {
+		color: #fe7011;
+		margin: 0;
+	}
+
+	span {
+		color: #07396a;
+		font-weight: 700;
+		@mixin tra;
+
+		&:hover {
+			letter-spacing: .7rem;
+			opacity: .8;
+		}
+	}
+}

@@ -4,5 +4,19 @@ jQuery(document).ready(function ($) {
 	$(".triger").click(function () {
 		$(this).parent().toggleClass( "menu-item-has-children--expanded" );
 	})
-})
+
+  $(document).ready(function(){
+    $('.main-carousel').flickity({
+      wraparound: true,
+      autoPlay: 3500,
+      // pauseAutoPlayOnHover: false,
+      // lazyLoad: 1,
+      pageDots: true,
+      prevNextButtons: true
+    });
+  });
+});
+
+
+
 

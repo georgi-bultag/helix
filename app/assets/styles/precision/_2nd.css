@@ -1,0 +1,82 @@
+.page2 {
+	.bgImg {
+		background-image: url("/assets/images/services.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.title {
+		margin-top: -5rem;
+		color: #fff;
+
+		@mixin min 768 {
+			margin-top: -9rem;
+			text-align: center;
+		}
+
+		@mixin min 1024 {
+			margin-top: -11.5rem;
+		}
+
+		@mixin min 1440 {
+			margin-top: -14.5rem;
+		}
+	}
+}
+
+.activities {
+	padding-top: 0rem;
+	padding-bottom: 0;
+	margin-bottom: 5rem;
+
+	@mixin min 768 {
+		padding: 5rem 0 0 0;
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	@mixin min 1024 {
+		padding: 6rem 0 0 0;
+	}
+
+	@mixin min 1440 {
+		padding: 10rem 0 0 0;
+	}
+
+	&__header {
+		display: block;
+		padding-bottom: 4.5rem;
+	}
+
+	.activity {
+		height: 22rem;
+
+		.title {
+			color: #fff;
+			font-size: 2rem;
+			text-align: left;
+		}
+	}
+
+	.title {
+		font-size: 2.3rem;
+		font-weight: 700;
+		text-align: center;
+
+		&--ptPlus {
+			padding-top: 0; 
+
+			@mixin min 768 {
+				padding-top: 0;
+			}
+		}
+	}
+
+	p {
+		font-size: 1.6rem;
+	}
+}

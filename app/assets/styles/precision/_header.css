@@ -1,15 +1,17 @@
 .header {
 	padding-top: 1rem;
-	height: 6.5rem;
+	height: 6.6rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
-	background: rgba(255, 255, 255, .92); /* .92 */
+	align-items: baseline;
+	background: rgba(255, 255, 255, .92);
 	font-size: 1.5rem;
 
 	@mixin min 768 {
-
+		height: 6.5rem;
+		padding-top: 0;
+		justify-content: space-around;
 	}
 
 	&__links {
@@ -18,10 +20,19 @@
 		height: auto;
 		order: 2;
 		margin-bottom: 0;
+		justify-content: space-between;
+
+		@mixin min 768 {
+			order: 3;
+			width: 25%;
+			justify-content: space-around;
+		}
 	}
 
 	.btn {
 		font-size: 0;
+		padding: 0 1rem 0 1rem;
+		text-align: center;
 
 		@mixin min 768 {
 			font-size: 1.5rem;
@@ -29,7 +40,7 @@
 
 		span {
 			font-size: initial;
-			padding: 0 2rem 0 2rem;
+			padding: 0 1rem 0 1rem;
 		}
 	}
 }
@@ -38,8 +49,15 @@
 	width: 50%;
 	text-align: center;
 	order: 1;
+
+	@mixin min 768 {
+		top: 0;
+		width: 30rem;
+		padding-left: 3.5rem;
+		text-align: left;
+	}
 }
 
 body {
-	background: #0377b2;
+	/*background: #0377b2;*/
 }

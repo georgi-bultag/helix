@@ -1,0 +1,26 @@
+.links {
+	text-transform: uppercase;
+	font-weight: 700;
+	overflow: hidden;
+	@mixin tra;
+
+	&:hover {
+		display: block;
+		transform: scale(1.1);
+		letter-spacing: .3rem;
+		color: var(--accent-color);
+	    cursor: pointer;
+	}
+
+	&:after {
+		content:'>>';
+		position: relative;
+		top: 0;
+		left: .5rem;
+		font-size: 1.3rem;
+	}
+
+	@mixin min 768 {
+		color: #FFF;
+	}
+}

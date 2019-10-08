@@ -1,0 +1,131 @@
+.mainHeader {
+	background-image: url("/assets/images/main-header-mobile.jpg");
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	height: 64.5rem;
+	margin-bottom: 17rem;
+
+	@mixin min 375 {
+		margin-bottom: 15rem;
+	}
+
+	@mixin min 425 {
+		margin-bottom: 13rem;
+	}
+
+	@mixin min 476 {
+		margin-bottom: 9rem;
+	}
+
+	@mixin min 768 {
+		background-image: url("/assets/images/main-header.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: -4.5rem;
+	}
+
+	@mixin min 1024 {
+		margin-bottom: -2rem;
+	}
+
+	@mixin min 1600 {
+		background-image: url("/assets/images/main-header.jpg");
+		height: 75rem;
+	}
+
+	h2 {
+		text-transform: uppercase;
+
+		@mixin min 768 {
+			color: #FFF;
+		}
+	}
+
+	p {
+		font-size: 1.8rem;
+		font-weight: 550;
+
+		@mixin min 768 {
+			color: #FFF;
+		}
+	}
+
+	a {
+		&:hover {
+			color: #FFF;
+		}
+	}
+}
+
+.holder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	@mixin min 768 {
+		flex-direction: row;
+	}
+
+	.left {
+		width: 100%;
+		top: 20%;
+		padding: 5rem 0 5rem 0;
+
+		@mixin min 768 {
+			width: 36%;
+		}
+	}
+
+	.right {
+		width: 100%;
+
+		@mixin min 768 {
+			width: 47.5%;
+			padding-top: 0;
+		}
+
+		@mixin min 1300 {
+			margin-right: -4%;
+		}
+
+		img {
+			object-fit: cover;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+}
+
+.main-carousel {
+	width: 100%; 
+	opacity: 0;
+	animation: opacity 3s forwards;
+	
+	@mixin min 768 {
+		width: 92%;
+	}
+
+	@mixin min 1024 {
+		width: 100%;
+	}
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 35.5rem;
+  margin-right: 1rem;
+  background: #8C8;
+  border-radius: .5rem;
+  counter-increment: carousel-cell;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
