@@ -1,12 +1,13 @@
 .links {
 	text-transform: uppercase;
 	font-weight: 700;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	@mixin tra;
 
 	&:hover {
 		display: block;
-		transform: scale(1.1);
+		/*transform: scale(1.1);*/
+		font-weight: 900;
 		letter-spacing: .3rem;
 		color: var(--accent-color);
 	    cursor: pointer;
@@ -22,5 +23,11 @@
 
 	@mixin min 768 {
 		color: #FFF;
+	}
+}
+
+.pp {
+	p {
+		font-size: 3.2rem;
 	}
 }

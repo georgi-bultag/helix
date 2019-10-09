@@ -21,9 +21,9 @@
 	}
 
 	&__header {
+		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		flex-direction: row; 
 		margin-bottom: 1rem;
 
 		@mixin min 768 {
@@ -50,8 +50,20 @@
 
 	.activity {
 		@mixin min 768 {
+			width: 32.5%;
+
+			p {
+				font-size: 2.5rem;
+			}
+		}
+
+		@mixin min 1115 {
 			width: 29.4%;
 			padding: 3rem;
+
+			p {
+				font-size: 3.2rem;
+			}
 		}
 	}
 
@@ -59,7 +71,7 @@
 		color: #018ecd;
 
 		@mixin min 768 {
-			padding-right: .5rem;
+			padding: 0 .2rem 0 .2rem;
 			color: var(--accent-color);
 		}
 	}		
@@ -76,6 +88,7 @@
 	align-content: flex-end;
 	font-size: 3rem;
 	text-align: left;
+	@mixin tra;
 
 	&--orange {
 		background: #fe7011;
@@ -83,6 +96,12 @@
 
 	&--dblue {
 		background: #07396a;
+	}
+
+	&:hover {
+		transform: translateY(-1.5rem);
+		box-shadow: .1rem .1rem 1rem .1rem #808080;
+		opacity: 0.80;
 	}
 
 	p {
@@ -117,6 +136,7 @@
 		&:hover {
 			bottom: 1rem;
 			transform: translateY(-1.5rem);
+			box-shadow: .1rem .1rem 1rem .1rem #808080;
 
 			img {
 				opacity: .85;
@@ -162,6 +182,8 @@
 
 		&:hover {
 			letter-spacing: .15rem;
+			background: rgba(254,112,17,.10);
+			box-shadow: .1rem .1rem 1rem .1rem #808080;
 
 			.title {
 				font-weight: 900;
@@ -173,6 +195,7 @@
 
 			@mixin min 768 {
 				flex-direction: row;
+				padding: 0 0 0 1rem;
 			}
 		}
 
@@ -181,16 +204,16 @@
 
 			@mixin min 768 {
 				flex-direction: row-reverse;
+				padding: 0 1rem 0 0;
 			}
 		}
 	}
 
 	&__left {
-		&:hover {
-			transform: translateX(4%);
-		}
+		padding-left: 1rem;
 
 		@mixin min 768 {
+			padding-left: 0;
 			width: 45.5%;
 			@mixin tra;
 		}
@@ -198,21 +221,17 @@
 
 	&__right {
 		margin-top: 3rem;
+		padding-bottom: 1rem;
 
 		@mixin min 768 {
+			padding-bottom: 0;
 			margin-top: 0;
+			width: 45.5%;
 		}
 
 		img {
 			object-fit: cover;
-			min-width: 100%;
-			min-height: 100%;
 			@mixin tra;
-
-			&:hover {
-				transform: translateX(-4%);
-				opacity: .90;
-			}
 		}
 	}
 

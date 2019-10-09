@@ -76,14 +76,14 @@ img { max-width: 100%; height: auto; vertical-align: middle; }
     max-width: 1124px; 
     margin: 0 auto;
 
-    @media(max-width: 1124px){
+    @media(max-width: 1440px){
         padding: 0 20px;
     }   
 
     &--small {
         max-width: 1110px;
 
-        @media(max-width: 1130){
+        @media(max-width: 1110){
             padding: 0 20px;
         }
     }
