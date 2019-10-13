@@ -106,11 +106,14 @@
 
 	p {
 		color: #fff;
+		width: 100%;
+
 	}
 
 	a {
 		color: #fff;
 		font-size: 1.5rem;
+		width: 100%;
 
 		&:after {
 			display: none;
@@ -164,7 +167,6 @@
 
 		&:hover {
 			transform: scale(1.3);
-			letter-spacing: .3rem;
 		}
 	}
 }
@@ -181,12 +183,10 @@
 		@mixin tra;
 
 		&:hover {
-			letter-spacing: .15rem;
-			background: rgba(254,112,17,.10);
 			box-shadow: .1rem .1rem 1rem .1rem #808080;
 
 			.title {
-				font-weight: 900;
+				color: var(--accent-color);
 			}
 		}
 		

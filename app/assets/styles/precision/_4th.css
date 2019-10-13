@@ -5,23 +5,13 @@
 		padding: 3rem .5rem 3rem 1rem;
 		@mixin tra;
 
-/*		@mixin min 375 {
-			height: 34rem;
-		}
-
-		@mixin min 425 {
-			height: 38rem;
-		}*/
-
 		@mixin min 768 {
 			width: 31%;
-			/*height: 40rem;*/
 		}
 
 		&:hover {
 			bottom: 1rem;
 			transform: translateY(-1.5rem);
-			background: rgba(254,112,17,.10);
 			box-shadow: .1rem .1rem 1rem .1rem #808080;
 
 			img {
@@ -33,6 +23,11 @@
 			width: 100%;
 			max-width: 100%;
 			max-height: 100%;
+			text-align: center;
+
+			@mixin min 768 {
+				text-align: left;
+			}
 		}
 
 		.right {
@@ -50,7 +45,21 @@
 		}
 	}
 
-	.activities__header {
-		padding: 4.5rem 0 2rem 0;
+	.activities {
+		padding-top: 0;
+		text-align: center;
+
+		@mixin min 1024 {
+			padding-top: 3rem;
+		}
+
+		@mixin min 1440 {
+			padding-top: 7rem;
+		}
+
+		&__header {
+			display: inline-block;
+			padding: 4.5rem 0 2rem 0;
+		}
 	}
 }

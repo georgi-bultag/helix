@@ -1,0 +1,38 @@
+.breadcrumbs {
+	display: none;
+
+	@mixin min 768 {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		list-style-type: none;
+		top: 2rem;
+		left: 2rem;
+		font-size: 1.4rem;
+
+		@mixin min 768 {
+			top: 3.5rem;
+		}
+
+		@mixin min 1024 {
+			top: 6rem;
+		}
+
+		@mixin min 1440 {
+			top: 9.5rem;
+		}
+
+		li {
+			padding-left: 2rem;
+
+			&:nth-child(1) {
+				padding-left: 0;
+			}
+
+			&:nth-last-child(1) {
+				font-weight: 900;
+			}
+		}
+	}
+}

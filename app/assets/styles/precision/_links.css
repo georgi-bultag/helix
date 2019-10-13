@@ -5,12 +5,10 @@
 	@mixin tra;
 
 	&:hover {
-		display: block;
-		/*transform: scale(1.1);*/
-		font-weight: 900;
-		letter-spacing: .3rem;
+		/*display: block;*/
 		color: var(--accent-color);
 	    cursor: pointer;
+	    transform: scale(1.1);
 	}
 
 	&:after {
@@ -29,5 +27,17 @@
 .pp {
 	p {
 		font-size: 3.2rem;
+	}
+}
+
+.breadLinks {
+	color: #000;
+	position: relative;
+
+	&:after {
+		content:'>';
+		top: 0;
+		left: 1rem;
+		position: relative;
 	}
 }
