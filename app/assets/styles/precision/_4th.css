@@ -12,7 +12,7 @@
 		&:hover {
 			bottom: 1rem;
 			transform: translateY(-1.5rem);
-			box-shadow: .1rem .1rem 1rem .1rem #808080;
+			box-shadow: .1rem .1rem 1rem .1rem rgba(0,0,0,.1);
 
 			img {
 				opacity: .85;
@@ -32,10 +32,9 @@
 
 		.right {
 			padding-top: 2rem;
-			color: #000;
 			
 			.title {
-				color: #07396a;
+				color: var(--accent-color-3);
 			}
 
 			p {

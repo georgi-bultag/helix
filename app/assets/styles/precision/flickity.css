@@ -82,7 +82,7 @@
 
 .flickity-prev-next-button.previous { 
   top: -11%;
-  left: 70%; 
+  /*left: 70%; */
   /*background: none;*/
 
   @mixin min 375 {

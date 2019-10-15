@@ -1,14 +1,11 @@
 .links {
 	text-transform: uppercase;
 	font-weight: 700;
-	/*overflow: hidden;*/
 	@mixin tra;
 
 	&:hover {
-		/*display: block;*/
 		color: var(--accent-color);
 	    cursor: pointer;
-	    transform: scale(1.1);
 	}
 
 	&:after {

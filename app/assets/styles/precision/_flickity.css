@@ -82,17 +82,20 @@
 
 .flickity-prev-next-button.previous { 
   top: -11%;
-  left: 70%; 
-  /*background: none;*/
+  left: 72%; 
+}
 
-  @mixin min 375 {
-    top: -11%;
-    left: 75%;
-  }
-
-  @mixin min 1024 {
+@media only screen and (min-width: 425px) {
+  .flickity-prev-next-button.previous {
     top: -11%;
     left: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flickity-prev-next-button.previous {
+    top: -11%;
+    left: 78%;
   }
 }
 
